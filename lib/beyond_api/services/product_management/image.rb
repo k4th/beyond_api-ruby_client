@@ -46,8 +46,8 @@ module BeyondApi
       # @see https://developer.epages.com/beyond-docs/#upload_multiple_product_images
       #
       # @param id [String] the product UUID
-      # @param id [Array] an array of strings containing the path of each image
-      # @param id [Array] an array of strings containing the file name of each image
+      # @param image_paths [Array] an array of strings containing the path of each image
+      # @param image_names [Array] an array of strings containing the file name of each image
       #
       # @return [Hash]
       #
