@@ -3,8 +3,11 @@
 require "beyond_api/utils"
 
 module BeyondApi
+  autoload :CustomerGroups,         "beyond_api/resources/customers/customer_groups"
+
   class Customers < Base
     include BeyondApi::Utils
+    include BeyondApi::CustomerGroups
 
     #
     # A +GET+ request is used to list all customers of the shop in a paged way. Each item in the response represents a summary of the customer data.
